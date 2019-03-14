@@ -3,7 +3,31 @@
     background-color:#B8CEDE;
     color: #88AEC9;
 }
-/*Top Nav Tablet*/
+
+@media(max-width: 430px){
+    .topNav ul{
+        text-align: center;
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .topNav li{
+        padding-left: 30px;
+    }
+}
+
+@media(min-width: 770px){
+    .topNav ul{
+        text-align: right;
+        margin-bottom: 25px;
+        font-size: 12px;
+    }
+
+    .topNav li{
+        padding-left: 5px;
+    }
+}
+
 .topNav-sm ul{
     text-align: left;
     padding: 0;
@@ -24,37 +48,12 @@
 .topNav-sm a:hover{
     color: #88AEC9;
 }
-/*End of Top Nav Tablet*/
-@media(max-width: 425px){
-    .topNav ul{
-        text-align: center;
-        font-size: 18px
-    }
-    
-    .topNav li{
-        padding-left: 20px;
-    }
-}
-
-@media(min-width: 768px){
-    .topNav ul{
-        text-align: right;
-        margin-bottom: 25px;
-        font-size: 12px;
-    }
-
-    .topNav li{
-        padding-left: 5px;
-    }
-}
 
 .topNav ul{    
     padding: 0;
-    margin: 0;
 }
 
 .topNav li{
-    
     list-style: none;
     display: inline;
 }
@@ -69,21 +68,22 @@
 }
 
 /*Logo Area*/
-@media(max-width: 425px){
+@media(max-width: 430px){
     .logo h1{
         margin: 0;
     }
 
     .shopCart{
-        margin: 0 0 0 200px;
+        float: right;
+        margin-top: -40px;
     }
 
     .searchIcon{
-        margin: 0 auto 0 auto;
+        margin: 5px auto 0 330px;
     }
 }
 
-@media(min-width: 768px){
+@media(min-width: 770px){
     .logo h1{
         color: #638DAB;
         padding: 0;
@@ -123,18 +123,18 @@
 }
 
 /*Search Box and Login*/
-@media(max-width: 425px){
+@media(max-width: 430px){
     .searchBox input{
         width: 300px;
         margin: 0 auto 0 auto;
     }
 
     .login ul{
-        margin: 0;
+        margin-top: 50px;
     }
 }
 
-@media(min-width: 768px){
+@media(min-width: 770px){
     .searchBox input{
         float: right;
         width: 200px;
@@ -186,19 +186,20 @@
 }
 
 /*Featured*/
-@media(max-width: 425px){
+@media(max-width: 430px){
     .feature-text {
-        margin: 10px 130px 0 60px;
+        margin: -80px 150px 0 85px;
     }
     
     .feature-price {
-        margin-top: -50px;
-        margin-left: 235px;
+        margin-top: -40px;
+        margin-left: 260px;
     }
   
     .feature-product a{
+        position: absolute;
         text-align: center;
-        margin: 25px 0 0 0;
+        margin: 25px auto 0 150px;
         text-decoration: none;
         background-color: #638DAB;
         border-radius: 0;
@@ -207,15 +208,15 @@
     }
 }
 
-@media(min-width: 768px){
+@media(min-width: 770px){
     .feature-text{
         position: absolute;
-        margin: -80px 130px 0 60px;
+        margin: 10px 130px 0 60px;
     }
     
     .feature-price{
         position: absolute;
-        margin-top: -80px;
+        margin-top: 10px;
         margin-left: 235px;
     }
 
@@ -237,7 +238,7 @@
 }
 
 .feature-product img{
-    margin: 20px auto 80px auto;
+    margin: 10px auto 80px auto;
     position: relative;
 }
 
@@ -247,29 +248,91 @@
 }
 
 /*Footer*/ 
+@media(max-width: 430px){
+    .ftr-bg{
+        margin-top: 80px;
+    }
+    .ftr-title h3{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .ftr-search input{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .ftr-button{
+        text-align: center;
+    }
+
+    .ftr-sm{
+        text-align: center;
+    }
+
+    .ftr-payment{
+        text-align: center;
+    }
+
+    .ftr-banner img{
+        margin: 0 auto;
+    }
+
+    .ftr-sm-banner img{
+        margin: 5px 0 0 0;
+    }
+}
+
+@media(min-width: 770px){
+    .ftr-title h3{
+        text-align: left;
+    }
+
+    .ftr-search input{
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .ftr-button{
+        text-align: left;
+    }
+
+    .ftr-sm{
+        text-align: center;
+    }
+
+    .ftr-payment{
+        text-align: left;
+    }
+
+    .ftr-banner img{
+        margin: 0 auto;
+    }
+
+    .ftr-sm-banner img{
+        margin: 5px 9px 20px 0;
+    }
+}
+
+@media(max-width: 1200px){
+
+}
+
 .ftr-bg{
     background-color: rgb(165, 204, 231);
 }
 
-.ftr-news{
-    
-}
-
-.ftr-title h3 {
+.ftr-title h3{
     font-size: 14px;
     color: #638DAB;
-    text-align: center;
 }
 
 .ftr-search input{
     display: block;
-    width: 250px;
-    margin: 0 auto;
 }
 
 .ftr-button{
-    margin-top: 25px;
-    text-align: center;
+    margin-top: 20px;
 }
 .ftr-button a{
     text-decoration: none;
@@ -288,10 +351,9 @@
 }
 
 .ftr-sm{
-    text-align: center;
     font-size: 14px;
     color: #638DAB;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .ftr-sm-buttons ul{
@@ -322,17 +384,11 @@
 }
 
 .ftr-payment{
-    text-align: center;
-    margin-top: 25px;
-    font-size: 18px;
+    margin-top: 20px;
+    font-size: 14px;
     color: #638DAB; 
 }
 
 .ftr-banner img{
-    margin: 0 auto 0 auto;
     position: relative;
-}
-
-.ftr-sm-banner img{
-    margin: 5px -28px 0 40px;
 }
